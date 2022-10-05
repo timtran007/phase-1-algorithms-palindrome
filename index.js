@@ -1,9 +1,15 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  let reverseWord = word.split(' ').map(char => char.split('').reverse().join(''))
+  return word === reverseWord.join()? true : false
 }
 
+
+
 /* 
-  Add your pseudocode here
+  the function isPalindrome takes in a word that is a string. 
+  Let the variable reverseWord represent our variable word that is split into individual characters chain the map method to create a new array char pushes a reverse method and joining the characters
+  if word is strictly equal to reverseWord then return out the boolean of true...
+  else if word is not strictly the reverseWord return the boolean of false
 */
 
 /*
